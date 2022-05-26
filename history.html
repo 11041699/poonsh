@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Poonsh, the dog</title>
+  <title>Poonsh, the Origin</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript">	
+    function thankyou() {
+      $("#thankyou").addClass("thankyouready")
+      $("#thankyou").removeClass("thankyounot")
+      setTimeout(() => {
+        $("#thankyou").addClass("thankyounot")
+        $("#thankyou").removeClass("thankyouready")
+      }, 5000)
+        
+    }
+    
+</script>
 </head>
 <body>
-
-    <!-- 1	Each Page should have Header-Jumbotron			
-    2	Add 3 Buttons anywhere throught the site. 			
-    3	Add 8 Pictures throught the site			
-    4	Add 1 About Us Content Area			
-    5	Gallery with work or Images Related to the Site Theme 			
-    6	Each Page should have a Footer Jumbotron			
-    7	Each Page should have a Menu Bar with nav that links to all pages			 -->
   <header>
     <div class="container">
       <div class="row flex-nowrap justify-content-between align-items-center blog-header">
@@ -36,7 +41,7 @@
               <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="./history.html">History</a>
+              <a class="nav-link" href="./history.html">Origin Story</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./fun.html">Fun</a>
@@ -47,48 +52,163 @@
     </nav>
 
     <div class="jumbotron jumbotron-fluid header-jumbotron" style="margin-bottom:0">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 col-sm-10">
-            <h1 class="display-4">Here You can learn my story</h1>
-            <p class="lead">It is truly incredible</p>
+        <div class="container">
+          <div class="row ">
+            <div class="col-12 col-sm-10">
+              <h1 class="display-4">Here You can learn my story</h1>
+              <p class="lead">It is truly incredible</p>
+            </div>
+            <div class="col-12 col-sm-2 text-center">
+              <img src="./img/story2.jpg" class="rounded imgp"  alt="Poonsh the handsome">
+            </div>
           </div>
-          <div class="col-12 col-sm-2 text-center">
-            <img src="./img/2022-05-26 09.10.27.jpg" class="rounded imgp"  alt="Poonsh the handsome">
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary btn-lg m1 pet-me">PET ME!</button>
+          <button type="button"  onclick="thankyou()"  class="btn btn-primary  m-1 btn-lg pet-me">PET ME!</button>
     </div>
   </header>
+  <div id="thankyou" class="thankyounot">
+    <p>Thank you</p>
+    <img src="./img/thankyou.jpeg" class="rounded imgp"  alt="Thank you">
+  </div>
+<!-- Ponsh's Story -->
 
-  <div class="container" id="aboutme" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-4 mx-auto text-center">
-          <h2>About Me</h2>
-            <img src="img/Wyatt-Pic.jpg" alt="Wyatt Earp Picture" height="300" width="250"></a>
-            <br>
-            <br>
-          <p> Bacon ipsum dolor amet leberkas filet mignon beef bacon pastrami rump. Capicola sirloin picanha buffalo cow alcatra ribeye short ribs tail. Tenderloin sirloin tongue tri-tip. Jerky sausage bresaola short loin short ribs ground round tenderloin drumstick buffalo tongue pork.Tenderloin sirloin tongue tri-tip. Jerky sausage bresaola short loin short ribs ground round tenderloin drumstick buffalo tongue pork</p>
+<div class="container mt-5">
+    <h1 class="display-1">My Story's Timeline</h1>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Homeless years <span class="text-muted">Prior to 2020</span></h2>
+        <p>I spent my first 4 years in an industrial area near the railroads. I was frightened of large dogs and needed to hide from them under vehicles. No one was caring for me until...
+        </p>
       </div>
+      <div class="col-md-5 order-md-1">
+        <figure class="figure ">
+            <img src="./img/homeless1.PNG" class="rounded historyimg "  alt="Poonsh is homeless">
+            <figcaption class="figure-caption pl-5 ">In the streets</figcaption>
+        </figure>    
+      </div>
+      
+    </div>
 
-      <div class="col-sm-8">
-      <h2>Developing Applications on the Range <br>  </h2>
-        <h5>-- Since Dec 6, 1902 </h5>
+    <hr class="featurette-divider">
 
-
-        <div class="backgroundcolor">
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow, shank spare ribs shoulder doner.</p>
-
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow, shank spare ribs shoulder doner.</p>
-
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow, shank spare ribs shoulder doner.</p>
-
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow</p>
-        </div>
-
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Kind Woman <span class="text-muted">Early 2020</span></h2>
+        <p >...Until I met a kind woman who started taking care of me. She didnt bring me home but she was giving me food and made my life a lot easier. She also made me a nice haircut. After that she contacted volunteers to send me to a shelter.</p>
+      </div>
+      <div class="col-md-5">
+        <div class="col-md-5 order-md-1">
+            <figure class="figure">
+                <img src="./img/story2.jpg" class="rounded historyimg"  alt="Poonsh after first haircut">
+                <figcaption class="figure-caption pl-5">After the first haircut</figcaption>
+            </figure>       
+          </div>
       </div>
     </div>
-  </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Shelter time <span class="text-muted">March-May 2020</span></h2>
+        <p>At First, I spent sometime getting vaccines in a local shelter, and afterwards I travelled for a long time in a car until I reached a new big city. I was missing the woman who was helping me. It made me sad but I didnt show it to anyone. I remained calm and others 
+            started calling Buddha. However, a new woman who was taking care started calling me Poonsh. I didn't know what it meant but I liked it. 
+        </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <figure class="figure">
+            <img src="./img/inshelter.jpeg" class="rounded historyimg"  alt="Poonsh is at the shelter">
+            <figcaption class="figure-caption pl-5">At the shelter</figcaption>
+        </figure>
+      </div>
+      
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Meeting Parents <span class="text-muted">May 2020 - present</span></h2>
+        <p >In a shelter I met a lot of people who thought about adopting a pet. On May 23rd, a man and a woman came to visit. I liked them and showed them my sympathy by following them. That day they left, but the next day they came back and took me with them. This is how I found my parents.</p>
+      </div>
+      <div class="col-md-5">
+        <div class="col-md-5 order-md-1 align-middle mx-auto my-auto">
+            <figure class="figure">
+                <img src="./img/goinghome.jpeg" class="rounded historyimg "  alt="Going home">
+                <figcaption class="figure-caption pl-5">Going Home</figcaption>
+            </figure>
+        </div>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <h4 class="display-6">In a carusel below you can see how I was changing since then</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="5" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="6" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="7" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="8" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="9" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="10" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="11" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center" style="background-color: gray;">
+                <img src="./img/c1.jpeg" class="rounded imgcarousel text-align"  alt="carousel 1">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c2.jpeg" class="rounded imgcarousel text-align"  alt="carousel 2">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c3.jpeg" class="rounded imgcarousel text-align"  alt="carousel 3">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c4.jpeg" class="rounded imgcarousel text-align"  alt="carousel 4">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c5.jpeg" class="rounded imgcarousel text-align"  alt="carousel 5">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c6.jpeg" class="rounded imgcarousel text-align"  alt="carousel 6">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c7.jpeg" class="rounded imgcarousel text-align"  alt="carousel 7">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c8.jpeg" class="rounded imgcarousel text-align"  alt="carousel 8">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c9.jpeg" class="rounded imgcarousel text-align"  alt="carousel 9">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c10.jpeg" class="rounded imgcarousel text-align"  alt="carousel 10">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c11.jpeg" class="rounded imgcarousel text-align"  alt="carousel 11">   
+              </div>
+              <div class="carousel-item text-center" style="background-color: gray;">
+                <img src="./img/c12.jpeg" class="rounded imgcarousel text-align"  alt="carousel 12">   
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+
+</div>
+
+
+
+
 
 
 

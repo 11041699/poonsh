@@ -6,6 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript">	
+    function thankyou() {
+      $("#thankyou").addClass("thankyouready")
+      $("#thankyou").removeClass("thankyounot")
+      setTimeout(() => {
+        $("#thankyou").addClass("thankyounot")
+        $("#thankyou").removeClass("thankyouready")
+      }, 5000)
+        
+    }
+    
+</script>
 </head>
 <body>
 
@@ -36,7 +49,7 @@
               <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./history.html">History</a>
+              <a class="nav-link" href="./history.html">Origin Story</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./fun.html">Fun</a>
@@ -62,37 +75,36 @@
         <a class="btn btn-warning m-1" href="#aboutme" role="button"> About Me</a>
         <a class="btn btn-outline-warning m-1" href="./history.html" role="button">My Story</a>
         <a class="btn btn-success m-1" href="./fun.html" role="button">Things I like</a>
-        <button type="button" class="btn btn-primary btn-lg m1 pet-me">PET ME!</button>
+        <button type="button"  onclick="thankyou()"  class="btn btn-primary  m-1 btn-lg pet-me">PET ME!</button>
       </div>
     </div>
   </header>
-
-  <div class="container" id="aboutme" style="margin-top:30px">
+  <div id="thankyou" class="thankyounot">
+    <p>Thank you</p>
+    <img src="./img/thankyou.jpeg" class="rounded imgp"  alt="Thank you">
+  </div>
+  <div class="container my-5" id="aboutme">
     <div class="row">
-      <div class="col-sm-4 mx-auto text-center">
-          <h2>About Me</h2>
-            <img src="img/Wyatt-Pic.jpg" alt="Wyatt Earp Picture" height="300" width="250"></a>
-            <br>
-            <br>
-          <p> Bacon ipsum dolor amet leberkas filet mignon beef bacon pastrami rump. Capicola sirloin picanha buffalo cow alcatra ribeye short ribs tail. Tenderloin sirloin tongue tri-tip. Jerky sausage bresaola short loin short ribs ground round tenderloin drumstick buffalo tongue pork.Tenderloin sirloin tongue tri-tip. Jerky sausage bresaola short loin short ribs ground round tenderloin drumstick buffalo tongue pork</p>
-      </div>
+      <div class="col-12 col-md-6 mx-auto text-center">
+        <h2> About Me </h2>
+        <p>Woof! My name as you guessed is Poonsh. I am a relatively small dog, but I am very brave. For 4 years I lived on the streets.
+          It was a very difficult and hungry time. 2 years ago, on May 24th, my parents took me from a shelter. Life is so much better 
+          with a family &#x1f496; ! I am very important to them and I keep them fit although i am a bit lazy myself. During the pandemic
+          i was making them to walk me so that they could get a little bit of sunlight. I have been on the streets since the childhood,
+          these days I prefer to stay inside, but I care about my parents' health.
+        </p>
 
-      <div class="col-sm-8">
-      <h2>Developing Applications on the Range <br>  </h2>
-        <h5>-- Since Dec 6, 1902 </h5>
-
-
-        <div class="backgroundcolor">
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow, shank spare ribs shoulder doner.</p>
-
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow, shank spare ribs shoulder doner.</p>
-
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow, shank spare ribs shoulder doner.</p>
-
-        <p>Burgdoggen pork loin tail, t-bone ham hock beef spare ribs chuck jerky ball tip. Kevin capicola sausage t-bone pork picanha leberkas meatloaf, pork belly jerky brisket pastrami. Salami shankle brisket kielbasa ball tip. Tail meatball flank pig jowl brisket tenderloin. Alcatra short loin cow</p>
-        </div>
+        <p>On this website you can learn more about my story and how much I changed since I have home. You can also visit a page with things
+          that i like. You can pet me at any time you are on this website. I would very much appreciate it.
+        </p>
 
       </div>
+      <div class="col-12 col-md-6 text-center">
+            <img src="img/pirate.jpeg" alt="Poonsh Pirate" width="300px"></a>
+            <h3 class="display-5">Give me your food, human</h3>
+      </div>
+
+      
     </div>
   </div>
 
