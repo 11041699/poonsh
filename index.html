@@ -14,22 +14,15 @@
       setTimeout(() => {
         $("#thankyou").addClass("thankyounot")
         $("#thankyou").removeClass("thankyouready")
-      }, 5000)
+      }, 10000)
         
     }
     
 </script>
 </head>
 <body>
-
-    <!-- 1	Each Page should have Header-Jumbotron			
-    2	Add 3 Buttons anywhere throught the site. 			
-    3	Add 8 Pictures throught the site			
-    4	Add 1 About Us Content Area			
-    5	Gallery with work or Images Related to the Site Theme 			
-    6	Each Page should have a Footer Jumbotron			
-    7	Each Page should have a Menu Bar with nav that links to all pages			 -->
   <header>
+    <div class="fixed-top">
     <div class="container">
       <div class="row flex-nowrap justify-content-between align-items-center blog-header">
         <div class="col text-center">
@@ -58,6 +51,7 @@
         </div>
       </div>
     </nav>
+  </div>
 
     <div class="jumbotron jumbotron-fluid header-jumbotron" style="margin-bottom:0">
       <div class="container">
@@ -75,7 +69,7 @@
         <a class="btn btn-warning m-1" href="#aboutme" role="button"> About Me</a>
         <a class="btn btn-outline-warning m-1" href="./history.html" role="button">My Story</a>
         <a class="btn btn-success m-1" href="./fun.html" role="button">Things I like</a>
-        <button type="button"  onclick="thankyou()"  class="btn btn-primary  m-1 btn-lg pet-me">PET ME!</button>
+        <button type="button"  onclick="thankyou()"  class="btn btn-light  m-1 btn-lg pet-me">PET ME!</button>
       </div>
     </div>
   </header>
@@ -110,9 +104,8 @@
 
 
 
-<div class="jumbotron text-center footer-jumbotron" style="margin-bottom:0">
-    <p><span  class="lead">Created by paws of Mr. Poonsh </span><br> Ways to Contact: Loud Barking  </p>
-
+  <div class="jumbotron text-center footer-jumbotron" style="margin-bottom:0">
+    <p><span  class="lead">Created by  Mr. Poonsh's paws</span><br> Ways to Contact: Loud Barking  </p>
 </div>
 
 

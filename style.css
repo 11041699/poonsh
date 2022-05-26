@@ -57,6 +57,7 @@
 
 .header-jumbotron {
   background-color: #FFD87D;
+  margin-top: 110px;
 }
 
 .footer-jumbotron {
@@ -145,7 +146,7 @@
 }
 @media (max-width: 1250px) {
   .historyimg{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     height: 300px;
   }
 }
@@ -169,4 +170,29 @@
 
 #myCarousel {
   margin: 50px 0;
+}
+.fixed-top {
+  background-color: white;
+  border-bottom: 2px solid #FFCE5A;
+  box-shadow: 0px 5px 10px #FFCE5A;
+}
+
+video {
+  height: 600px; 
+  width: 450px;
+}
+
+
+@media (max-width: 1250px) {
+  video{
+    height: 400px; 
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  video{
+    height: 280px;
+    width: 210px;
+  }
 }
